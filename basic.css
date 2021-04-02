@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 95%;
+    min-height: 95vh;
+    background-color: #EEE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 100vh;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img {
+    height: 85vh;
+}
+.resume-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 35rem;
+}
+.group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 3px;
+    border: 1px solid hsl(0, 0%, 85%);
+}
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+.app-logo {
+    font-family: 'Cookie';
+    font-size: 4rem;
+}
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.md-96 {
+    font-size: 96px;
+}
+.md-light {
+    color: hsl(200, 80%, 80%);
+}
+.user-login {
+    background-color: hsl(200, 70%, 50%);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+.user-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.wrong-account {
+    color: slategrey;
+}
+.switch-signin {
+    color: #0095f6;
+}
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+.get-app-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.get-app-msg {
+    color: #222;
+}
+.app-store {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+}
+.badge {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    height: 3.5rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid lightgrey;
+}
+.badge-icon {
+    font-size: 2rem;
+    width: 2rem;
+}
+#icon-g {
+    font-size: 3rem;
+    color: hsl(180, 100%, 80%);
+}
+.badge-text {
+    font-family: 'Raleway', sans;
+}
+.badge-text.small   {
+    font-size: 0.75rem;
+}
+.badge-text.large {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@media (max-width: 1024px) {
+    .content-wrapper {
+        width: 90%;
+    }
+}
+@media (max-width: 650px) {
+    body {
+        background-color: white;
+    }
+    .content-wrapper {
+        width: 90%;
+    }
+    .image-container {
+        display: none;
+    }
+    .resume-login {
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+}
